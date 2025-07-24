@@ -10,6 +10,15 @@
 
 /* --------------- Shared Style --------------- */
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 100px;
+}
+
 .display-flex{
     display: flex;
 }
@@ -48,15 +57,6 @@
     font-weight: 500;
     padding: 19px 80px;
     cursor: pointer;
-}
-
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-main > section{
-    margin-top: 100px;
 }
 
 #color-text{
@@ -221,13 +221,13 @@ main > section{
     font-weight: 600;
 }
 
-#deal-text-h3{
+#dealText-h3{
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-#deal-text-a{
+#dealText-a{
     color: #FFFFFF;
     font-size: 1.25rem;
     font-weight: 600;
@@ -273,8 +273,28 @@ main > section{
 
 /* --------------------------------------------- */
 /* --------------- Footer Style --------------- */
-
-
+.site-footer{
+    max-width: 1440px;
+    margin: 20px auto;
+    justify-content: space-around;
+}
+.footer-left{
+    width: 359px;
+}
+.footer-links li{
+    list-style: none;
+}
+.footer-links ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+.footer-social{
+    flex-direction: row;
+    gap: 24px;
+    justify-items: center;
+    padding-top: 24px;
+}
 /* --------------------------------------------- */
 /* --------------- Responsive Style --------------- */
 @media screen and (max-width: 393px) {
@@ -348,10 +368,10 @@ main > section{
     .col1 {
         gap: 20px;
     }
-    #dealtext-h3{
+    #dealText-h3{
         font-size: 1.25rem;
     }
-    #dealtext-a{
+    #dealText-a{
         font-size: 1rem;
     }
 
@@ -367,5 +387,15 @@ main > section{
         width: 100px;
     }
 
+    /* ----- Footer ----- */
+    .site-footer{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .footer-links ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
 }
 
