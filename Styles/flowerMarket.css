@@ -178,6 +178,9 @@ main > section{
 }
 
 /* ----- Third Section ----- */
+.third-section{
+    margin-top: 130px;
+}
 .ts-images{
     position: relative;
     gap: 28px;
