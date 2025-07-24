@@ -1,15 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 .noto-serif-font{
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-
-
 
 /* --------------- Shared Style --------------- */
 
@@ -36,17 +33,6 @@
     font-weight: 400;
 }
 
-.h1-p{
-    color: black;
-    font-size: 6rem;
-    font-weight: 900;
-    
-}
-.h2-p{
-    color: black;
-    font-size: 4rem;
-    font-weight: 800;
-}
 .h3-p{
     font-family: 'inter', sans-serif;
     color: rgba(0, 0, 0, 0.5);
@@ -65,7 +51,7 @@
 }
 
 main{
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -135,7 +121,10 @@ main > section{
 .text-center{
     text-align: center;
 }
-
+.first-section, .second-section, .third-section{
+    max-width: 1140px;
+    margin: auto 150px;
+}
 /* --------------------------------------------- */
 /* --------------- Main Style --------------- */
 /* ----- First Section ----- */
@@ -179,6 +168,7 @@ main > section{
 
 /* ----- Third Section ----- */
 .third-section{
+    justify-content: space-between;
     margin-top: 130px;
 }
 .ts-images{
@@ -244,6 +234,39 @@ main > section{
 }
 
 /* ----- Fourth Section ----- */
+.fourth-section {
+    margin-top: 120px;
+    background-image: url('../B12A02-Responsive-Flowers/assets/news-letter-bg.png');
+    background-size: cover;
+    height: 533px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#subscribe-title {
+    color: #FFFFFF;
+}
+.subscribe-form input{
+    padding-left: 20px;
+    font-size: 1rem;
+    border: none;
+    width: 644px;
+    height: 50px;
+}
+.subscribe-form button{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    width: 186px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.subscribe-form button:hover {
+    background-color: #d35400;
+}
+
 
 /* --------------------------------------------- */
 /* --------------- Footer Style --------------- */
@@ -253,6 +276,9 @@ main > section{
 /* --------------- Responsive Style --------------- */
 @media screen and (max-width: 393px) {
 
+    .first-section, .second-section, .third-section{
+        margin: auto 0;
+    }
     .navbar{
         flex-direction: row;
         justify-content: space-between;
@@ -297,6 +323,7 @@ main > section{
     .btn-primary{
         padding: 19px 30.5px;
     }
+
     /* ----- Second Section ----- */
     .second-section{
         flex-direction: column;
@@ -325,14 +352,17 @@ main > section{
         font-size: 1rem;
     }
 
-
-
-
-
-
-
-
-
+    /* ----- Fourth Section ----- */
+    .fourth-section {
+        margin-top: 120px;
+        height: 276px;
+    }
+    .subscribe-form input{
+        width: 180px;
+    }
+    .subscribe-form button{
+        width: 100px;
+    }
 
 }
 
